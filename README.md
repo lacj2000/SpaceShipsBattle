@@ -25,4 +25,4 @@
         - Setar o numero de players 1 - 5;
         - Verificar a porta de conexão (exibidana tela);
     2. Conectar o controle;
-    3. Divirtasse;
+    3. Divirta-se;
