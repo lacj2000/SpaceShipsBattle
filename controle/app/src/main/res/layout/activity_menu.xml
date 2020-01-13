@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+
+    <RadioGroup
+        android:id="@+id/availableHosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/listButton"/>
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="listAvailableConnection"
+        android:layout_marginBottom="50dp"
+        android:text="@string/rf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/goGaming"/>
+
+    <Button
+        android:id="@+id/goGaming"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="goGaming"
+        android:text="@string/connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/listButton"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/typedId"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="@string/_0_0_0_0"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:digits="1234567890.-"
+        android:importantForAutofill="no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sendTypedIp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/sendTypedIp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="sendIp"
+        android:text="@string/connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/typedId"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
