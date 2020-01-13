@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LaPhis Controller 0.2</string>
+    <string name="descricao_bt1">Botão de ataque</string>
+    <string name="descricao_bt2">Botão de defesa</string>
+    <string name="descricao_bt3">Botão especial</string>
+    <string name="send">SEND</string>
+    <string name="instrut">Instruct</string>
+    <string name="clientmsg">Digite o que vai mandar</string>
+    <string name="rf">RF</string>
+    <string name="connect">Connect</string>
+    <string name="_0_0_0_0">000.000.000.000</string>
+</resources>
